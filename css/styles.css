@@ -1,0 +1,525 @@
+/* Custom CSS for High Heels Dance Store */
+
+/* Global Settings */
+:root {
+    --primary-color: #6f42c1;
+    --secondary-color: #fd7e14;
+    --success-color: #198754;
+    --info-color: #0dcaf0;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding-top: 76px; /* For fixed navbar */
+}
+
+/* Custom Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background: var(--gradient-bg) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--warning-color) !important;
+}
+
+/* Carousel Styles */
+.carousel-section {
+    margin-top: -76px;
+    padding-top: 76px;
+}
+
+.carousel-image {
+    height: 80vh;
+    min-height: 500px;
+    object-fit: cover;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23e9ecef" width="1200" height="600"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%236c757d" font-family="sans-serif" font-size="40">Imagen del Carousel</text></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(111, 66, 193, 0.6), rgba(253, 126, 20, 0.6));
+    z-index: 2;
+}
+
+.carousel-content {
+    text-align: center;
+}
+
+.carousel-content h1 {
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 5;
+}
+
+.carousel-indicators {
+    z-index: 5;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.product-card .card-img-top {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><rect fill="%23f8f9fa" width="300" height="300"/><text x="50%" y="45%" text-anchor="middle" dy=".3em" fill="%236c757d" font-family="sans-serif" font-size="16">Imagen del</text><text x="50%" y="60%" text-anchor="middle" dy=".3em" fill="%236c757d" font-family="sans-serif" font-size="16">Producto</text></svg>');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card .card-body {
+    padding: 1.5rem;
+}
+
+.product-card .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.price-section {
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+}
+
+/* Company Image */
+.company-image img {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><rect fill="%23e9ecef" width="600" height="400"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%236c757d" font-family="sans-serif" font-size="20">Historia de la Empresa</text></svg>');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.gallery-image img {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><rect fill="%23dee2e6" width="600" height="400"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%23495057" font-family="sans-serif" font-size="18">Proceso Artesanal</text></svg>');
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+}
+
+/* Custom Alert */
+.custom-alert {
+    border-left: 4px solid var(--info-color);
+    background: linear-gradient(135deg, rgba(13, 202, 240, 0.1), rgba(111, 66, 193, 0.1));
+    border-radius: 0.5rem;
+}
+
+/* Custom List Group */
+.custom-list-group .list-group-item {
+    border: none;
+    background: transparent;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.custom-list-group .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Custom Accordion */
+.custom-accordion .accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem !important;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.custom-accordion .accordion-button {
+    background: var(--gradient-bg);
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background: var(--gradient-bg);
+    color: white;
+    box-shadow: none;
+}
+
+.custom-accordion .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.custom-accordion .accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 0.5rem;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.contact-info .contact-item i {
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+/* Responsive Contact Form */
+@media (max-width: 991.98px) {
+    .contact-form {
+        margin-bottom: 2rem;
+    }
+    
+    .contact-form .row .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact-form .row {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #343a40, #495057) !important;
+}
+
+footer h5 {
+    color: var(--warning-color);
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #ffffff !important;
+}
+
+footer .text-muted {
+    color: #e9ecef !important;
+}
+
+.social-links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--warning-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Team Modal - Using Flexbox and Grid as required */
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(111, 66, 193, 0.05), rgba(253, 126, 20, 0.05));
+    border-radius: 1rem;
+    border: 1px solid rgba(111, 66, 193, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.member-photo {
+    flex-shrink: 0;
+}
+
+.member-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><circle fill="%23e9ecef" cx="125" cy="125" r="125"/><text x="50%" y="45%" text-anchor="middle" dy=".3em" fill="%236c757d" font-family="sans-serif" font-size="16">Foto</text><text x="50%" y="60%" text-anchor="middle" dy=".3em" fill="%236c757d" font-family="sans-serif" font-size="16">Miembro</text></svg>');
+    background-size: cover;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.member-info h5 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.member-info p {
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-bg);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: white;
+}
+
+/* Team Modal Responsive Design */
+@media (min-width: 768px) {
+    .team-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .team-member {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .member-info {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .member-info {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .member-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .team-member {
+        padding: 1rem;
+    }
+    
+    .member-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Button Animations */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background: var(--gradient-bg);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a359a, #e8681a);
+}
+
+/* Modal Customizations */
+.modal-content {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: space-between;
+}
+
+/* Utility Classes */
+.text-gradient {
+    background: var(--gradient-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Spacing */
+section {
+    scroll-margin-top: 76px;
+}
+
+/* Responsive Text */
+@media (max-width: 767.98px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+/* Loading Animation for Images */
+.card-img-top,
+.company-image img,
+.gallery-image img,
+.member-image {
+    background-color: #f8f9fa;
+    transition: opacity 0.3s ease;
+}
+
+/* Enhanced Product Cards on Different Screen Sizes */
+@media (min-width: 1200px) {
+    .product-card .card-img-top {
+        height: 320px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .product-card .card-img-top {
+        height: 250px;
+    }
+    
+    .product-card .card-body {
+        padding: 1rem;
+    }
+}
+
+/* Enhanced Carousel for Mobile */
+@media (max-width: 767.98px) {
+    .carousel-image {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .carousel-content h1 {
+        font-size: 2rem;
+    }
+    
+    .carousel-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Form Enhancements */
+.form-control:focus {
+    background-color: #fff;
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+/* Success States */
+.was-validated .form-control:valid {
+    border-color: var(--success-color);
+}
+
+.was-validated .form-control:valid:focus {
+    border-color: var(--success-color);
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
