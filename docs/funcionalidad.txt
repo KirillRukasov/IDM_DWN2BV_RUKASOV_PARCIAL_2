@@ -1,0 +1,26 @@
+
+COMPONENTES BOOTSTRAP UTILIZADOS:
+- Navbar (navegación responsive con colapso en breakpoint lg)
+- Carousel (dos carruseles: banner principal con 3 slides y galería de producto con 4 slides)
+- Modal (2 modales: confirmación de compra de productos y datos del alumno)
+- Cards (5 tarjetas de productos con imagen, título, descripción, precio y botón)
+- Accordion (preguntas frecuentes con 3 elementos expandibles)
+- Alert (alerta informativa de oferta especial con icono)
+- List Group (lista de características de calidad con iconos)
+- Form Controls (formulario de contacto con validación HTML5)
+
+BREAKPOINTS UTILIZADOS:
+- sm (≥576px): Ajustes para móviles grandes, navbar colapsada
+- md (≥768px): Tablets, formulario en 2 columnas, productos en 2 columnas
+- lg (≥992px): Laptops/desktops pequeños, navbar expandida, productos en 3 columnas
+- xl (≥1200px): Desktops, layout optimizado con contenido centrado
+- xxl (≥1400px): Pantallas grandes, máximo aprovechamiento de espacio
+
+DISEÑO DE DISPLAY PARA INFORMACIÓN DEL ALUMNO:
+Se utilizó CSS Grid y Flexbox para la maquetación del modal del alumno:
+- Display: grid para el contenedor principal (.team-container)
+- Display: flex para elementos internos (.team-member, .member-info, .social-links)
+- Responsive en 3 breakpoints:
+  * Desktop (≥768px): flex-direction row, text-align left
+  * Tablet (576px-767px): mantiene estructura desktop con imagen reducida
+  * Móvil (<576px): flex-direction column, text-align center, elementos centrados

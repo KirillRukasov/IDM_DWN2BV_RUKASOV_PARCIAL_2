@@ -1,0 +1,18 @@
+Carrera: Diseño y Programación Web
+Materia: Interacción con Dispositivos Móviles
+Año: 2025
+Cuatrimestre: Segundo
+Comisión: DWN2BV
+Turno: Noche
+Apellido y Nombre: Rukasov, Kirill
+Docente: Corbalan Cristian Ariel
+Carácter de entrega: Final
+Fecha exacta de mesa de examen final: 06.08.2025
+Dirección del sitio web: https://kirillrukasov.github.io/IDM_DWN2BV_RUKASOV_PARCIAL_2/
+
+Notas adicionales:
+- Proyecto desarrollado como tienda online de zapatos de baile profesionales
+- Implementa diseño responsive con Bootstrap 5
+- Incluye galería de productos, formulario de contacto y sección de detalle de producto
+- Optimizado para múltiples dispositivos y navegadores
+- Código HTML5 válido y semánticamente correcto

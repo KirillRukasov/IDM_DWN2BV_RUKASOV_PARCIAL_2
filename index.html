@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#inicio" aria-label="Ir a la sección de inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#productos-intro" aria-label="Ir a la sección de productos">Productos</a>
+                        <a class="nav-link" href="#producto-detalle" aria-label="Ir al detalle de producto">Producto Destacado</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#catalogo" aria-label="Ir al catálogo de productos">Catálogo</a>
@@ -126,25 +126,229 @@
             </div>
         </section>
 
-        <!-- Introducción al producto -->
-        <section id="productos-intro" class="py-5">
+        <section id="producto-detalle" class="py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h2 class="display-5 fw-bold mb-4">Nuestros Productos</h2>
-                        <p class="lead mb-4">
-                            En High Heels Dance ofrecemos una amplia gama de zapatos especializados para diferentes disciplinas de baile. Desde zapatos de salón y latino hasta calzado para tango, flamenco y danza contemporánea, cada modelo está diseñado pensando en las necesidades específicas de bailarines profesionales y aficionados exigentes.
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-4">Latino Profesional - Modelo Destacado</h2>
+                        <p class="lead text-muted">
+                            Descubre en detalle nuestro modelo más vendido, diseñado especialmente para bailarines de salsa, bachata y ritmos latinos profesionales.
                         </p>
                     </div>
                 </div>
-                
-                <!-- Alert Component -->
-                <div class="row mt-4">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="alert alert-info d-flex align-items-center custom-alert" role="alert">
-                            <i class="bi bi-info-circle-fill me-3 fs-4"></i>
-                            <div>
-                                <strong>¡Oferta especial!</strong> Envío gratuito en pedidos superiores a $150.000. Consulta nuestras condiciones.
+
+                <div class="row align-items-center mb-5">
+                    <!-- Galería de imágenes del producto -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div id="productDetailCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#productDetailCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vista principal"></button>
+                                <button type="button" data-bs-target="#productDetailCarousel" data-bs-slide-to="1" aria-label="Vista lateral"></button>
+                                <button type="button" data-bs-target="#productDetailCarousel" data-bs-slide-to="2" aria-label="Vista de la suela"></button>
+                                <button type="button" data-bs-target="#productDetailCarousel" data-bs-slide-to="3" aria-label="Detalles de construcción"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/producto-1.jpg" class="d-block w-100 product-detail-img" alt="Latino Profesional - Vista principal">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                        <p>Vista principal del zapato</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/producto-1-1.webp" class="d-block w-100 product-detail-img" alt="Latino Profesional - Vista lateral">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                        <p>Perfil lateral - Tacón 7cm</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/producto-1-2.webp" class="d-block w-100 product-detail-img" alt="Latino Profesional - Suela">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                        <p>Suela de ante profesional</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/producto-1-3.webp" class="d-block w-100 product-detail-img" alt="Latino Profesional - Detalles">
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                        <p>Detalles de construcción artesanal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#productDetailCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#productDetailCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Información detallada del producto -->
+                    <div class="col-lg-6">
+                        <div class="product-details">
+                            <h3 class="h2 mb-3 text-primary">Latino Profesional</h3>
+                            <p class="lead mb-4">
+                                Nuestro modelo estrella diseñado para la <strong>danza latina profesional</strong>. 
+                                Fabricado con <em>piel de becerro italiana</em> y suela de ante de la más alta calidad, 
+                                garantiza el <strong>deslizamiento perfecto</strong> y la <strong>estabilidad</strong> 
+                                necesaria para movimientos técnicos avanzados.
+                            </p>
+
+                            <!-- Especificaciones técnicas -->
+                            <div class="specifications mb-4">
+                                <h4 class="h5 mb-3">Especificaciones Técnicas:</h4>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div class="spec-item">
+                                            <i class="bi bi-rulers text-primary me-2"></i>
+                                            <strong>Tacón:</strong> 7cm estabilizado
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="spec-item">
+                                            <i class="bi bi-gem text-primary me-2"></i>
+                                            <strong>Material:</strong> Piel italiana premium
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="spec-item">
+                                            <i class="bi bi-circle text-primary me-2"></i>
+                                            <strong>Suela:</strong> Ante profesional
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="spec-item">
+                                            <i class="bi bi-palette text-primary me-2"></i>
+                                            <strong>Colores:</strong> Negro, Marrón, Nude
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="spec-item">
+                                            <i class="bi bi-arrow-left-right text-primary me-2"></i>
+                                            <strong>Tallas:</strong> 35 - 42
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="spec-item">
+                                            <i class="bi bi-award text-primary me-2"></i>
+                                            <strong>Garantía:</strong> 12 meses
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Precio y botón de compra -->
+                            <div class="price-purchase-section p-4 bg-light rounded">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="price-display">
+                                        <span class="h3 text-primary fw-bold mb-0">$183.780</span>
+                                        <div class="text-muted small">Precio final con IVA incluido</div>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <span class="ms-2 text-muted">(127 reseñas)</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 mb-3" data-bs-toggle="modal" data-bs-target="#productModal">
+                                    <i class="bi bi-cart-plus me-2"></i>Agregar al Carrito
+                                </button>
+                                <button class="btn btn-outline-primary w-100">
+                                    <i class="bi bi-heart me-2"></i>Agregar a Favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formas de pago y financiación -->
+                <div class="row mt-5">
+                    <div class="col-lg-6 mb-4">
+                        <div class="payment-methods">
+                            <h4 class="h5 mb-3">
+                                <i class="bi bi-credit-card text-primary me-2"></i>
+                                Métodos de Pago
+                            </h4>
+                            <div class="payment-options">
+                                <div class="payment-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-credit-card-2-front text-success me-3"></i>
+                                    <span><strong>Tarjetas de crédito:</strong> Visa, Mastercard, American Express</span>
+                                </div>
+                                <div class="payment-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-bank text-success me-3"></i>
+                                    <span><strong>Transferencia bancaria</strong> con 5% de descuento</span>
+                                </div>
+                                <div class="payment-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-wallet2 text-success me-3"></i>
+                                    <span><strong>Mercado Pago:</strong> Hasta 12 cuotas sin interés</span>
+                                </div>
+                                <div class="payment-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-cash text-success me-3"></i>
+                                    <span><strong>Efectivo</strong> en nuestro showroom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="shipping-info">
+                            <h4 class="h5 mb-3">
+                                <i class="bi bi-truck text-primary me-2"></i>
+                                Envío y Entrega
+                            </h4>
+                            <div class="shipping-options">
+                                <div class="shipping-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-geo-alt text-info me-3"></i>
+                                    <span><strong>CABA y GBA:</strong> Envío gratis en 24-48hs</span>
+                                </div>
+                                <div class="shipping-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-truck text-info me-3"></i>
+                                    <span><strong>Interior del país:</strong> 3-5 días hábiles</span>
+                                </div>
+                                <div class="shipping-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-shop text-info me-3"></i>
+                                    <span><strong>Retiro en tienda:</strong> Sin costo adicional</span>
+                                </div>
+                                <div class="shipping-item d-flex align-items-center mb-2">
+                                    <i class="bi bi-arrow-clockwise text-info me-3"></i>
+                                    <span><strong>Cambios:</strong> 30 días para cambio de talla</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficios adicionales -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="additional-benefits bg-primary bg-opacity-10 p-4 rounded">
+                            <h4 class="text-center mb-4">¿Por qué elegir nuestro Latino Profesional?</h4>
+                            <div class="row g-4">
+                                <div class="col-md-4 text-center">
+                                    <div class="benefit-item">
+                                        <i class="bi bi-shield-check text-primary fs-1 mb-3"></i>
+                                        <h5>Garantía de Calidad</h5>
+                                        <p class="text-muted">12 meses de garantía contra defectos de fabricación</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="benefit-item">
+                                        <i class="bi bi-tools text-primary fs-1 mb-3"></i>
+                                        <h5>Servicio Técnico</h5>
+                                        <p class="text-muted">Reparaciones y mantenimiento por artesanos especializados</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="benefit-item">
+                                        <i class="bi bi-people text-primary fs-1 mb-3"></i>
+                                        <h5>Asesoramiento</h5>
+                                        <p class="text-muted">Consulta gratuita con nuestros expertos en danza</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -156,6 +360,17 @@
         <section id="catalogo" class="py-5 bg-light">
             <div class="container">
                 <h2 class="display-5 fw-bold text-center mb-5">Catálogo de Productos</h2>
+
+                <div class="row mb-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="alert alert-info d-flex align-items-center custom-alert" role="alert">
+                            <i class="bi bi-info-circle-fill me-3 fs-4"></i>
+                            <div>
+                                <strong>¡Oferta especial!</strong> Envío gratuito en pedidos superiores a $150.000. Consulta nuestras condiciones.
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="row g-4">
                     <!-- Producto 1 -->
@@ -472,7 +687,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
                     <h5 class="modal-title" id="teamModalLabel">
-                        <i class="bi bi-people-fill me-2"></i>Datos del alumno
+                        <i class="bi bi-person-badge-fill me-2"></i>Información del Alumno
                     </h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -484,17 +699,64 @@
                             </div>
                             <div class="member-info">
                                 <h5>Rukasov Kirill</h5>
-                                <p class="text-muted">34 años</p>
-                                <p><a
-                                    href="mailto:kirill.rukasov@davinci.edu.ar"
-                                    target="_blank">kirill.rukasov@davinci.edu.ar</a></p>
+                                <p class="text-muted mb-2">34 años</p>
+                                
+                                <!-- Información académica -->
+                                <div class="academic-info mb-3">
+                                    <div class="info-item">
+                                        <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                                        <strong>Carrera:</strong> Diseño y Programación Web
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="bi bi-book-fill text-primary me-2"></i>
+                                        <strong>Materia:</strong> Interacción con Dispositivos Móviles
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="bi bi-calendar-fill text-primary me-2"></i>
+                                        <strong>Año y Cuatrimestre:</strong> 2025 - Segundo Cuatrimestre
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="bi bi-people-fill text-primary me-2"></i>
+                                        <strong>Comisión:</strong> DWN2BV
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="bi bi-clock-fill text-primary me-2"></i>
+                                        <strong>Turno:</strong> Noche
+                                    </div>
+                                </div>
+                                
+                                <!-- Información de contacto -->
+                                <div class="contact-info mb-3">
+                                    <div class="info-item">
+                                        <i class="bi bi-envelope-fill text-success me-2"></i>
+                                        <a href="mailto:kirill.rukasov@davinci.edu.ar" target="_blank" class="text-decoration-none">
+                                            kirill.rukasov@davinci.edu.ar
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Redes sociales -->
                                 <div class="social-links">
-                                    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-                                    <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
-                                    <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
+                                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <div class="w-100 text-center">
+                        <small class="text-muted">
+                            <i class="bi bi-calendar-event me-1"></i>
+                            Proyecto Final - Interacción con Dispositivos Móviles - 2025
+                        </small>
                     </div>
                 </div>
             </div>
